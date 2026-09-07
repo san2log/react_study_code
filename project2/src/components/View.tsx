@@ -1,8 +1,7 @@
-import { useCount } from "../store/count"
+import { useCount } from "../store/count";
 
-export default function view() {
-    const count = useCount(); //store에 count 값 가져오기
-  return (
-    <div>count: {count}</div>
-  )
+export default function View() {
+  const count = useCount();// store에서 만든 훅 호출
+
+  return <div>count: {count}</div>;
 }
